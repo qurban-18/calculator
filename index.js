@@ -6,11 +6,11 @@ let equal=document.querySelector(".equal")
 btns.forEach((btn)=>{
     btn.addEventListener('click',(e)=>{
         btnText = e.target.innerText;
-        input.value += btnText;
         if(btnText == 'X'){
             btnText = '*';
         }
-        else if(btnText == 'C'){
+        input.value += btnText;
+        if(btnText == 'C'){
             input.value = '';
             output.innerText = '0'
         }
